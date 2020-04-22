@@ -19,7 +19,6 @@ class UserListActivity:AppCompatActivity() {
         var arrayAdapter = ArrayAdapter<String> (this, android.R.layout.simple_list_item_1, userList)
         list_view_result.adapter = arrayAdapter
 
-
         button_add.setOnClickListener {
             var name = edit_text_ime.text.toString()
             var state = edit_text_drzava.text.toString()
