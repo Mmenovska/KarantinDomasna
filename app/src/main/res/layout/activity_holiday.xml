@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#86608e">
+
+    <TextView
+        android:id="@+id/text_view_gsix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GSIX Academy"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:textSize="20dp"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/button_easter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_gsix"
+        android:layout_margin = "40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#e282ad"
+        android:text="Велигден"
+        android:textStyle="italic"
+        android:textColor="@color/White"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button_new_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_gsix"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_gsix"
+        android:layout_margin="40dp"
+        android:text="Нова Година"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:background="#e282ad"
+        android:textColor="@color/White"/>
+    <Button
+        android:id="@+id/button_ilinden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/button_easter"
+        app:layout_constraintTop_toBottomOf="@id/button_easter"
+        android:layout_marginTop="20dp"
+        android:text="Илинден"
+        android:textAllCaps="false"
+        android:background="#e282ad"
+        android:textColor="@color/White"
+        android:textStyle="italic"/>
+    <Button
+        android:id="@+id/button_vodici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button_new_year"
+        app:layout_constraintEnd_toEndOf="@id/button_new_year"
+        android:layout_marginTop="20dp"
+        android:text="Водици"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:textColor="@color/White"
+        android:background="#e282ad"/>
+    <Button
+        android:id="@+id/button_bogorodica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button_ilinden"
+        app:layout_constraintStart_toStartOf="@id/button_ilinden"
+        android:layout_marginTop="20dp"
+        android:text="Богородица"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:textColor="@color/White"
+        android:background="#e282ad"/>
+    <Button
+        android:id="@+id/button_ramazan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button_vodici"
+        app:layout_constraintEnd_toEndOf="@id/button_vodici"
+        android:layout_marginTop="20dp"
+        android:text="Рамазан"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:background="#e282ad"
+        android:textColor="@color/White" />
+    <Button
+        android:id="@+id/button_kurban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button_bogorodica"
+        app:layout_constraintStart_toStartOf="@id/button_bogorodica"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/White"
+        android:textStyle="italic"
+        android:textAllCaps="false"
+        android:text="Курбан"
+        android:background="#e282ad"/>
+    <Button
+        android:id="@+id/button_kipur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button_ramazan"
+        app:layout_constraintEnd_toEndOf="@id/button_ramazan"
+        android:layout_marginTop="20dp"
+        android:text="Јом Кипур"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:textColor="@color/White"
+        android:background="#e282ad"/>
+    <TextView
+        android:id="@+id/text_view_holiday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/button_easter"
+        app:layout_constraintEnd_toEndOf="@id/button_ramazan"
+        app:layout_constraintTop_toBottomOf="@id/button_kipur"
+        android:background="@drawable/holidays"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
