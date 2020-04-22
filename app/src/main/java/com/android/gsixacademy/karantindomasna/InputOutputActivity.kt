@@ -25,10 +25,10 @@ class InputOutputActivity : AppCompatActivity() {
                         if (edit_text_birthday.text.isEmpty()){
                             Toast.makeText(applicationContext, "Invalid input", Toast.LENGTH_SHORT).show()
                         } else {
-                            var name = edit_text_name.text.toString()
-                            var city = edit_text_city.text.toString()
-                            var state = edit_text_state.text.toString()
-                            var date = edit_text_birthday.text.toString()
+                            val name = edit_text_name.text.toString()
+                            val city = edit_text_city.text.toString()
+                            val state = edit_text_state.text.toString()
+                            val date = edit_text_birthday.text.toString()
                             text_view_result.text = "Јас сум $name роден во $city, $state на ден $date"
                         }
                     }
@@ -41,4 +41,4 @@ class InputOutputActivity : AppCompatActivity() {
 
 
 
-    }
+}
