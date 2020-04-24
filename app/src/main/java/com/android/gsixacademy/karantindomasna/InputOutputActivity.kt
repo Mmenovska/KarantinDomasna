@@ -31,6 +31,8 @@ class InputOutputActivity : AppCompatActivity() {
                             val date = edit_text_birthday.text.toString()
                             text_view_result.text = "Јас сум $name роден во $city, $state на ден $date"
                         }
+
+
                     }
                 }
             }
