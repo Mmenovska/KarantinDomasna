@@ -115,15 +115,14 @@
         android:textStyle="italic"
         android:textColor="@color/White"
         android:background="#e282ad"/>
-    <TextView
-        android:id="@+id/text_view_holiday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/button_easter"
-        app:layout_constraintEnd_toEndOf="@id/button_ramazan"
-        app:layout_constraintTop_toBottomOf="@id/button_kipur"
-        android:background="@drawable/holidays"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@+id/button_kipur"
+       app:layout_constraintStart_toStartOf="@id/button_kurban"
+       android:src="@drawable/holidays"
+       android:layout_margin="25dp"
+       android:scaleType="center"/>
 
 
 
